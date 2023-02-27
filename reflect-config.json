@@ -711,13 +711,8 @@
     {"name":"setVgrow","parameterTypes":["javafx.scene.Node","javafx.scene.layout.Priority"] }
   ],
   "queriedMethods":[
-    {"name":"getColumnIndex","parameterTypes":["javafx.scene.Node"] }, 
     {"name":"getColumnSpan","parameterTypes":["javafx.scene.Node"] }, 
-    {"name":"getHalignment","parameterTypes":["javafx.scene.Node"] }, 
-    {"name":"getHgrow","parameterTypes":["javafx.scene.Node"] }, 
-    {"name":"getRowIndex","parameterTypes":["javafx.scene.Node"] }, 
-    {"name":"getValignment","parameterTypes":["javafx.scene.Node"] }, 
-    {"name":"getVgrow","parameterTypes":["javafx.scene.Node"] }
+    {"name":"getRowIndex","parameterTypes":["javafx.scene.Node"] }
   ]
 },
 {
@@ -1018,7 +1013,8 @@
 {
   "name":"uk.ac.bristol.controllers.CommitController",
   "allDeclaredFields":true,
-  "queryAllDeclaredMethods":true
+  "queryAllDeclaredMethods":true,
+  "methods":[{"name":"confirmCommit","parameterTypes":["javafx.event.Event"] }]
 },
 {
   "name":"uk.ac.bristol.controllers.InformationController",
