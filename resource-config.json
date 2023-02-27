@@ -11,10 +11,16 @@
       "pattern":"\\Qcom/sun/jna/linux-x86-64/libjnidispatch.so\\E"
     }, 
     {
+      "pattern":"\\Qfxml-resources/commit.fxml\\E"
+    }, 
+    {
       "pattern":"\\Qfxml-resources/ghgui.fxml\\E"
     }, 
     {
       "pattern":"\\Qfxml-resources/information.fxml\\E"
+    }, 
+    {
+      "pattern":"\\Qfxml-resources/login.fxml\\E"
     }, 
     {
       "pattern":"\\Qfxml-resources/remote.fxml\\E"
@@ -38,15 +44,24 @@
   "bundles":[
     {
       "name":"com.sun.javafx.tk.quantum.QuantumMessagesBundle",
-      "locales":[""]
+      "locales":[
+        "", 
+        "und"
+      ]
     }, 
     {
       "name":"com/sun/javafx/scene/control/skin/resources/controls",
-      "locales":[""]
+      "locales":[
+        "", 
+        "und"
+      ]
     }, 
     {
       "name":"org.eclipse.jgit.internal.JGitText",
-      "locales":[""]
+      "locales":[
+        "", 
+        "und"
+      ]
     }
   ]
 }

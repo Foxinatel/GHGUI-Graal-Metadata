@@ -26,8 +26,75 @@
   ]
 },
 {
+  "name":"com.jcraft.jsch.DH25519",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"com.jcraft.jsch.DH448",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"com.jcraft.jsch.UserAuthNone",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"com.jcraft.jsch.UserAuthPublicKey",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"com.jcraft.jsch.jbcrypt.JBCrypt",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"com.jcraft.jsch.jce.AES128CTR",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"com.jcraft.jsch.jce.AES256CTR",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"com.jcraft.jsch.jce.HMACSHA1",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"com.jcraft.jsch.jce.HMACSHA256ETM",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"com.jcraft.jsch.jce.MD5",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"com.jcraft.jsch.jce.Random",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"com.jcraft.jsch.jce.SHA256",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"com.jcraft.jsch.jce.SHA512",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"com.jcraft.jsch.jce.SignatureEd25519",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"com.jcraft.jsch.jce.SignatureEd448",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"com.jcraft.jsch.jce.XDH",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
   "name":"com.kodedu.terminalfx.Terminal",
-  "methods":[{"name":"onTerminalReady","parameterTypes":[] }]
+  "methods":[
+    {"name":"command","parameterTypes":["java.lang.String"] }, 
+    {"name":"onTerminalReady","parameterTypes":[] }
+  ]
 },
 {
   "name":"com.kodedu.terminalfx.TerminalView",
@@ -90,6 +157,10 @@
 },
 {
   "name":"com.sun.crypto.provider.GaloisCounterMode$AESGCM",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"com.sun.crypto.provider.HmacCore$HmacSHA256",
   "methods":[{"name":"<init>","parameterTypes":[] }]
 },
 {
@@ -199,6 +270,10 @@
 {
   "name":"com.sun.scenario.effect.impl.prism.PrRenderer",
   "methods":[{"name":"createRenderer","parameterTypes":["com.sun.scenario.effect.FilterContext"] }]
+},
+{
+  "name":"com.sun.scenario.effect.impl.prism.ps.PPSBlend_DARKENPeer",
+  "methods":[{"name":"<init>","parameterTypes":["com.sun.scenario.effect.FilterContext","com.sun.scenario.effect.impl.Renderer","java.lang.String"] }]
 },
 {
   "name":"com.sun.scenario.effect.impl.prism.ps.PPSBlend_SRC_ATOPPeer",
@@ -353,6 +428,10 @@
   "queryAllDeclaredMethods":true
 },
 {
+  "name":"javafx.geometry.HPos",
+  "methods":[{"name":"valueOf","parameterTypes":["java.lang.String"] }]
+},
+{
   "name":"javafx.geometry.Insets",
   "queryAllPublicMethods":true,
   "queryAllPublicConstructors":true,
@@ -374,6 +453,10 @@
   "methods":[{"name":"valueOf","parameterTypes":["java.lang.String"] }]
 },
 {
+  "name":"javafx.geometry.VPos",
+  "methods":[{"name":"valueOf","parameterTypes":["java.lang.String"] }]
+},
+{
   "name":"javafx.scene.Camera"
 },
 {
@@ -385,6 +468,7 @@
   "methods":[
     {"name":"getId","parameterTypes":[] }, 
     {"name":"getStyleClass","parameterTypes":[] }, 
+    {"name":"setBlendMode","parameterTypes":["javafx.scene.effect.BlendMode"] }, 
     {"name":"setId","parameterTypes":["java.lang.String"] }, 
     {"name":"setNodeOrientation","parameterTypes":["javafx.geometry.NodeOrientation"] }, 
     {"name":"setOnMouseClicked","parameterTypes":["javafx.event.EventHandler"] }, 
@@ -413,6 +497,15 @@
   "methods":[{"name":"setOnAction","parameterTypes":["javafx.event.EventHandler"] }]
 },
 {
+  "name":"javafx.scene.control.CheckBox",
+  "queryAllDeclaredMethods":true,
+  "queryAllPublicConstructors":true,
+  "methods":[
+    {"name":"<init>","parameterTypes":[] }, 
+    {"name":"setSelected","parameterTypes":["boolean"] }
+  ]
+},
+{
   "name":"javafx.scene.control.ComboBox",
   "queryAllDeclaredMethods":true,
   "queryAllPublicConstructors":true,
@@ -428,6 +521,10 @@
   ]
 },
 {
+  "name":"javafx.scene.control.ContentDisplay",
+  "methods":[{"name":"valueOf","parameterTypes":["java.lang.String"] }]
+},
+{
   "name":"javafx.scene.control.Control",
   "queryAllDeclaredMethods":true
 },
@@ -441,8 +538,12 @@
   "name":"javafx.scene.control.Labeled",
   "queryAllDeclaredMethods":true,
   "methods":[
+    {"name":"setAlignment","parameterTypes":["javafx.geometry.Pos"] }, 
+    {"name":"setContentDisplay","parameterTypes":["javafx.scene.control.ContentDisplay"] }, 
     {"name":"setMnemonicParsing","parameterTypes":["boolean"] }, 
-    {"name":"setText","parameterTypes":["java.lang.String"] }
+    {"name":"setText","parameterTypes":["java.lang.String"] }, 
+    {"name":"setTextAlignment","parameterTypes":["javafx.scene.text.TextAlignment"] }, 
+    {"name":"setWrapText","parameterTypes":["boolean"] }
   ]
 },
 {
@@ -475,6 +576,12 @@
   ]
 },
 {
+  "name":"javafx.scene.control.PasswordField",
+  "queryAllDeclaredMethods":true,
+  "queryAllPublicConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
   "name":"javafx.scene.control.ScrollPane",
   "queryAllDeclaredMethods":true,
   "queryAllPublicConstructors":true,
@@ -500,10 +607,44 @@
   "queriedMethods":[{"name":"isResizableWithParent","parameterTypes":["javafx.scene.Node"] }]
 },
 {
+  "name":"javafx.scene.control.Tab",
+  "queryAllDeclaredMethods":true,
+  "queryAllPublicConstructors":true,
+  "methods":[
+    {"name":"<init>","parameterTypes":[] }, 
+    {"name":"setClosable","parameterTypes":["boolean"] }, 
+    {"name":"setContent","parameterTypes":["javafx.scene.Node"] }, 
+    {"name":"setText","parameterTypes":["java.lang.String"] }
+  ]
+},
+{
   "name":"javafx.scene.control.TabPane",
   "queryAllDeclaredMethods":true,
   "queryAllPublicConstructors":true,
+  "methods":[
+    {"name":"<init>","parameterTypes":[] }, 
+    {"name":"getTabs","parameterTypes":[] }
+  ]
+},
+{
+  "name":"javafx.scene.control.TextArea",
+  "queryAllDeclaredMethods":true,
+  "queryAllPublicConstructors":true,
   "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"javafx.scene.control.TextField",
+  "queryAllDeclaredMethods":true,
+  "queryAllPublicConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"javafx.scene.control.TextInputControl",
+  "queryAllDeclaredMethods":true,
+  "methods":[
+    {"name":"setPromptText","parameterTypes":["java.lang.String"] }, 
+    {"name":"setText","parameterTypes":["java.lang.String"] }
+  ]
 },
 {
   "name":"javafx.scene.control.TitledPane",
@@ -518,10 +659,17 @@
   ]
 },
 {
+  "name":"javafx.scene.effect.BlendMode",
+  "methods":[{"name":"valueOf","parameterTypes":["java.lang.String"] }]
+},
+{
   "name":"javafx.scene.effect.Effect"
 },
 {
   "name":"javafx.scene.image.Image"
+},
+{
+  "name":"javafx.scene.image.ImageView"
 },
 {
   "name":"javafx.scene.layout.AnchorPane",
@@ -536,6 +684,7 @@
   "methods":[
     {"name":"<init>","parameterTypes":[] }, 
     {"name":"setHgrow","parameterTypes":["javafx.scene.layout.Priority"] }, 
+    {"name":"setMaxWidth","parameterTypes":["double"] }, 
     {"name":"setMinWidth","parameterTypes":["double"] }, 
     {"name":"setPrefWidth","parameterTypes":["double"] }
   ]
@@ -552,12 +701,23 @@
     {"name":"<init>","parameterTypes":[] }, 
     {"name":"getColumnConstraints","parameterTypes":[] }, 
     {"name":"getRowConstraints","parameterTypes":[] }, 
+    {"name":"setColumnIndex","parameterTypes":["javafx.scene.Node","java.lang.Integer"] }, 
     {"name":"setColumnSpan","parameterTypes":["javafx.scene.Node","java.lang.Integer"] }, 
-    {"name":"setRowIndex","parameterTypes":["javafx.scene.Node","java.lang.Integer"] }
+    {"name":"setHalignment","parameterTypes":["javafx.scene.Node","javafx.geometry.HPos"] }, 
+    {"name":"setHgrow","parameterTypes":["javafx.scene.Node","javafx.scene.layout.Priority"] }, 
+    {"name":"setMargin","parameterTypes":["javafx.scene.Node","javafx.geometry.Insets"] }, 
+    {"name":"setRowIndex","parameterTypes":["javafx.scene.Node","java.lang.Integer"] }, 
+    {"name":"setValignment","parameterTypes":["javafx.scene.Node","javafx.geometry.VPos"] }, 
+    {"name":"setVgrow","parameterTypes":["javafx.scene.Node","javafx.scene.layout.Priority"] }
   ],
   "queriedMethods":[
+    {"name":"getColumnIndex","parameterTypes":["javafx.scene.Node"] }, 
     {"name":"getColumnSpan","parameterTypes":["javafx.scene.Node"] }, 
-    {"name":"getRowIndex","parameterTypes":["javafx.scene.Node"] }
+    {"name":"getHalignment","parameterTypes":["javafx.scene.Node"] }, 
+    {"name":"getHgrow","parameterTypes":["javafx.scene.Node"] }, 
+    {"name":"getRowIndex","parameterTypes":["javafx.scene.Node"] }, 
+    {"name":"getValignment","parameterTypes":["javafx.scene.Node"] }, 
+    {"name":"getVgrow","parameterTypes":["javafx.scene.Node"] }
   ]
 },
 {
@@ -589,6 +749,7 @@
     {"name":"setMaxWidth","parameterTypes":["double"] }, 
     {"name":"setMinHeight","parameterTypes":["double"] }, 
     {"name":"setMinWidth","parameterTypes":["double"] }, 
+    {"name":"setOpaqueInsets","parameterTypes":["javafx.geometry.Insets"] }, 
     {"name":"setPadding","parameterTypes":["javafx.geometry.Insets"] }, 
     {"name":"setPrefHeight","parameterTypes":["double"] }, 
     {"name":"setPrefWidth","parameterTypes":["double"] }
@@ -612,6 +773,7 @@
   "queryAllPublicConstructors":true,
   "methods":[
     {"name":"<init>","parameterTypes":[] }, 
+    {"name":"setAlignment","parameterTypes":["javafx.geometry.Pos"] }, 
     {"name":"setMargin","parameterTypes":["javafx.scene.Node","javafx.geometry.Insets"] }, 
     {"name":"setVgrow","parameterTypes":["javafx.scene.Node","javafx.scene.layout.Priority"] }
   ],
@@ -622,6 +784,18 @@
 },
 {
   "name":"javafx.scene.shape.Line"
+},
+{
+  "name":"javafx.scene.shape.LineTo"
+},
+{
+  "name":"javafx.scene.shape.MoveTo"
+},
+{
+  "name":"javafx.scene.shape.Path"
+},
+{
+  "name":"javafx.scene.shape.PathElement"
 },
 {
   "name":"javafx.scene.shape.Rectangle"
@@ -637,6 +811,10 @@
 },
 {
   "name":"javafx.scene.text.Text"
+},
+{
+  "name":"javafx.scene.text.TextAlignment",
+  "methods":[{"name":"valueOf","parameterTypes":["java.lang.String"] }]
 },
 {
   "name":"javafx.scene.transform.Transform"
@@ -679,7 +857,15 @@
   "methods":[{"name":"values","parameterTypes":[] }]
 },
 {
+  "name":"org.eclipse.jgit.lib.CoreConfig$LogRefUpdates",
+  "methods":[{"name":"values","parameterTypes":[] }]
+},
+{
   "name":"org.eclipse.jgit.lib.CoreConfig$SymLinks",
+  "methods":[{"name":"values","parameterTypes":[] }]
+},
+{
+  "name":"org.eclipse.jgit.util.sha1.SHA1$Sha1Implementation",
   "methods":[{"name":"values","parameterTypes":[] }]
 },
 {
@@ -830,9 +1016,24 @@
   ]
 },
 {
-  "name":"uk.ac.bristol.controllers.InformationController",
+  "name":"uk.ac.bristol.controllers.CommitController",
   "allDeclaredFields":true,
   "queryAllDeclaredMethods":true
+},
+{
+  "name":"uk.ac.bristol.controllers.InformationController",
+  "allDeclaredFields":true,
+  "queryAllDeclaredMethods":true,
+  "methods":[{"name":"onRefreshEvent","parameterTypes":["uk.ac.bristol.controllers.events.RefreshEvent"] }]
+},
+{
+  "name":"uk.ac.bristol.controllers.LoginController",
+  "allDeclaredFields":true,
+  "queryAllDeclaredMethods":true,
+  "methods":[
+    {"name":"addCredentials","parameterTypes":["javafx.event.Event"] }, 
+    {"name":"browse","parameterTypes":[] }
+  ]
 },
 {
   "name":"uk.ac.bristol.controllers.MainController",
@@ -846,22 +1047,38 @@
 {
   "name":"uk.ac.bristol.controllers.RemoteController",
   "allDeclaredFields":true,
-  "queryAllDeclaredMethods":true
+  "queryAllDeclaredMethods":true,
+  "methods":[
+    {"name":"fetch","parameterTypes":[] }, 
+    {"name":"onRefreshEvent","parameterTypes":["uk.ac.bristol.controllers.events.RefreshEvent"] }, 
+    {"name":"prune","parameterTypes":[] }
+  ]
 },
 {
   "name":"uk.ac.bristol.controllers.StatusBarController",
   "allDeclaredFields":true,
-  "queryAllDeclaredMethods":true
+  "queryAllDeclaredMethods":true,
+  "methods":[{"name":"onRefreshEvent","parameterTypes":["uk.ac.bristol.controllers.events.RefreshEvent"] }]
 },
 {
   "name":"uk.ac.bristol.controllers.StatusController",
   "allDeclaredFields":true,
-  "queryAllDeclaredMethods":true
+  "queryAllDeclaredMethods":true,
+  "methods":[{"name":"onRefreshEvent","parameterTypes":["uk.ac.bristol.controllers.events.RefreshEvent"] }]
 },
 {
   "name":"uk.ac.bristol.controllers.TabController",
   "allDeclaredFields":true,
-  "queryAllDeclaredMethods":true
+  "queryAllDeclaredMethods":true,
+  "methods":[
+    {"name":"commit","parameterTypes":["javafx.event.Event"] }, 
+    {"name":"loginClick","parameterTypes":[] }, 
+    {"name":"onRefreshEvent","parameterTypes":["uk.ac.bristol.controllers.events.RefreshEvent"] }, 
+    {"name":"populateCredentials","parameterTypes":["javafx.event.Event"] }, 
+    {"name":"pull","parameterTypes":["javafx.event.Event"] }, 
+    {"name":"push","parameterTypes":["javafx.event.Event"] }, 
+    {"name":"updateCredentials","parameterTypes":["javafx.event.Event"] }
+  ]
 },
 {
   "name":"uk.ac.bristol.controllers.events.Refreshable",

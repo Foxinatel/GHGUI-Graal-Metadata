@@ -9,8 +9,14 @@
   "name":"[Ljava.lang.Object;"
 },
 {
+  "name":"[Ljava.lang.String;"
+},
+{
   "name":"com.kodedu.terminalfx.Terminal",
-  "methods":[{"name":"onTerminalReady","parameterTypes":[] }]
+  "methods":[
+    {"name":"command","parameterTypes":["java.lang.String"] }, 
+    {"name":"onTerminalReady","parameterTypes":[] }
+  ]
 },
 {
   "name":"com.kodedu.terminalfx.TerminalView",
@@ -23,6 +29,17 @@
 {
   "name":"com.sun.glass.ui.Clipboard",
   "methods":[{"name":"contentChanged","parameterTypes":[] }]
+},
+{
+  "name":"com.sun.glass.ui.CommonDialogs",
+  "methods":[{"name":"createFileChooserResult","parameterTypes":["java.lang.String[]","com.sun.glass.ui.CommonDialogs$ExtensionFilter[]","int"] }]
+},
+{
+  "name":"com.sun.glass.ui.CommonDialogs$ExtensionFilter",
+  "methods":[
+    {"name":"extensionsToArray","parameterTypes":[] }, 
+    {"name":"getDescription","parameterTypes":[] }
+  ]
 },
 {
   "name":"com.sun.glass.ui.Cursor",
@@ -257,6 +274,13 @@
   ]
 },
 {
+  "name":"com.sun.webkit.CursorManager",
+  "methods":[
+    {"name":"getCursorManager","parameterTypes":[] }, 
+    {"name":"getPredefinedCursorID","parameterTypes":["int"] }
+  ]
+},
+{
   "name":"com.sun.webkit.FileSystem",
   "methods":[
     {"name":"fwkFileExists","parameterTypes":["java.lang.String"] }, 
@@ -330,6 +354,7 @@
     {"name":"getHostWindow","parameterTypes":[] }, 
     {"name":"getPage","parameterTypes":[] }, 
     {"name":"getRenderTheme","parameterTypes":[] }, 
+    {"name":"getScrollBarTheme","parameterTypes":[] }, 
     {"name":"setInputMethodState","parameterTypes":["boolean"] }
   ]
 },
@@ -341,13 +366,18 @@
 {
   "name":"com.sun.webkit.graphics.Ref",
   "methods":[
+    {"name":"deref","parameterTypes":[] }, 
     {"name":"getID","parameterTypes":[] }, 
     {"name":"ref","parameterTypes":[] }
   ]
 },
 {
   "name":"com.sun.webkit.graphics.ScrollBarTheme",
-  "methods":[{"name":"getThickness","parameterTypes":[] }]
+  "methods":[
+    {"name":"createWidget","parameterTypes":["long","int","int","int","int","int","int"] }, 
+    {"name":"getScrollBarPartRect","parameterTypes":["long","int","int[]"] }, 
+    {"name":"getThickness","parameterTypes":[] }
+  ]
 },
 {
   "name":"com.sun.webkit.graphics.WCFont",
@@ -369,6 +399,7 @@
   "name":"com.sun.webkit.graphics.WCGraphicsManager",
   "methods":[
     {"name":"createWCPath","parameterTypes":[] }, 
+    {"name":"createWCPath","parameterTypes":["com.sun.webkit.graphics.WCPath"] }, 
     {"name":"getGraphicsManager","parameterTypes":[] }, 
     {"name":"getSupportedMediaTypes","parameterTypes":[] }, 
     {"name":"getWCFont","parameterTypes":["java.lang.String","boolean","boolean","float"] }
@@ -376,6 +407,21 @@
 },
 {
   "name":"com.sun.webkit.graphics.WCMediaPlayer"
+},
+{
+  "name":"com.sun.webkit.graphics.WCPath",
+  "methods":[
+    {"name":"getPathIterator","parameterTypes":[] }, 
+    {"name":"transform","parameterTypes":["double","double","double","double","double","double"] }
+  ]
+},
+{
+  "name":"com.sun.webkit.graphics.WCPathIterator",
+  "methods":[
+    {"name":"currentSegment","parameterTypes":["double[]"] }, 
+    {"name":"isDone","parameterTypes":[] }, 
+    {"name":"next","parameterTypes":[] }
+  ]
 },
 {
   "name":"com.sun.webkit.graphics.WCPoint",
